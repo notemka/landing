@@ -1,0 +1,32 @@
+$twoSectionBg: #5db5a4;
+$thirdSectionBg: #eefafb;
+$fifeSectionBg: #000;
+$sixSectionBg: #ed5276;
+$footerBg: #e7e7e7;
+
+$textColor: #5c5f5f;
+$navBorder: #d7d7d7;
+$titleColor: #fff;
+$inputText: #9b9b9b;
+
+.clearfix:after, .clearfix:before{
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+/* для IE6-7 */
+.clearfix{
+  zoom: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+html,body{
+  font-family: 'ralewayRegular', sans-serif;
+}
