@@ -1,5 +1,5 @@
-В консоле:
-1. git clone https://github.com/notemka/landing
-2. перейти в папку с проектом, выполнить: npm install
-3. bower install
+В консоле: <br>
+1. git clone https://github.com/notemka/landing <br>
+2. перейти в папку с проектом, выполнить: npm install <br>
+3. bower install <br>
 4. gulp
