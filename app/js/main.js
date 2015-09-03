@@ -1,5 +1,3 @@
-$('input[placeholder], textarea[placeholder]').placeholder();
-
 (function(){
 	var app;
 	app = {
@@ -7,28 +5,11 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 			this.setUpListeners();
 		},
 		setUpListeners: function () {
-			$(window).on('load', this.centerContent);
-			$(window).on('resize', this.centerContent);
 			$(window).on('scroll', this.scrolledMenuDisplay);
 			$('.navigation-link').on('click', this.navMenuScroll);
 			$('.section-portfolio__btn-link').on('click', this.linkActive);
 			$('.scroll-menu__link').on('click', this.scrollMenuActive);
-		},
-
-		// центрирование заголовка первого section
-
-		centerContent: function () {
-			var content = $('.section__content'),
-				parent = $('.section-welcome'),
-				marginTop, marginLeft;
-
-			marginTop = (parent.height() - content.outerHeight()) / 2;
-			marginLeft = (parent.width() - content.outerWidth()) / 2;
-			content.css({
-				position: 'absolute',
-				top: marginTop,
-				left: marginLeft
-			});
+			$('#form-send').on('submit', this.sendMsg);
 		},
 
 		// появление фиксированного меню при скроле страницы
@@ -41,7 +22,7 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 			}
 		},
 
-		// плавный переход от меню в первом секшене к выбранному секшну
+		// плавный переход от меню в первом секшене к выбранному секшену
 
 		navMenuScroll: function (e) {
 			e.preventDefault();
@@ -74,6 +55,31 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 				$this.addClass('scroll-active').siblings().removeClass('scroll-active');
 				$.scrollTo(linkHref, 800);
 			}
+		},
+
+		// уведомление об успешной отправке письма(без самой отправки!)
+
+		sendMsg: function(e){
+			e.preventDefault();
+
+			var $this = $(this),
+				successMes = $('.form__success-message'),
+				fields = $this.find('.form-field'),
+				markup = "<div class='form__success-message'>Sent a letter!</div>";
+
+			if(successMes){
+				successMes.remove();
+				$this.append(markup);
+			} else {
+				$this.append(markup);
+			}
+
+			setTimeout(function () {
+				$('.form__success-message').remove();
+			}, 4000);
+
+			$this.trigger('reset');
+			fields.removeClass('success-field');
 		}
 	};
 	app.init();

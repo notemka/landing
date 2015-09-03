@@ -5,8 +5,8 @@
 	<title>Landing</title>
 	<!-- build:css css/vendor.min.css -->
 	<!-- bower:css -->
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
-	<link rel="stylesheet" href="bower/animate-css/animate.css"/>
+	<link rel="stylesheet" href="bower/animate-css/animate.css" />
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 
@@ -18,7 +18,9 @@
 
 	<!-- build:js js/modernizr.min.js -->
 	<!-- bower:js -->
-	<script src="bower/modernizr/modernizr.js/"></script>
+	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/modernizr/modernizr.js"></script>
+	<script src="bower/wow/dist/wow.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 </head>
@@ -51,7 +53,7 @@
 				<a href="#contact" class="scroll-menu__link">CONTACT</a>
 			</div>
 		</div>
-		<div class="section__content">
+		<div class="section__content clearfix">
 			<h1 class="section__title section-welcome__title">
 				Hi there! We are the new kids on the block<br>
 				and we build awesome websites and mobile apps
@@ -296,13 +298,13 @@
 		<h2 class="section__title section-get-in-touch__title">GET IN TOUCH</h2>
 		<p class="section__text section-get-in-touch__text">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
 
-		<form action="" class="form">
+		<form action="" id="form-send" class="form">
 			<div class="form-item clearfix">
-				<input type="text" class="form-field form-field__name" placeholder="Your Name">
-				<input type="email" class="form-field form-field__email" placeholder="Your Email">
+				<input type="text" name="name" class="form-field form-field__name" placeholder="Your Name" required>
+				<input type="email" name="email" class="form-field form-field__email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Your Email" required>
 			</div>
 			<div class="form-item">
-				<textarea class="form-field form-field__msg" placeholder="Your Message"></textarea>
+				<textarea name="msg" class="form-field form-field__msg" placeholder="Your Message" required></textarea>
 			</div>
 			<div class="form-item">
 				<input type="submit" class="form-send-btn" value="SEND MESSAGE">
@@ -325,13 +327,19 @@
 <!-- build:js js/vendor.min.js-->
 <!-- bower:js -->
 <script src="bower/jquery/dist/jquery.js"></script>
-<script src="bower/jquery.scrollTo/jquery.scrollTo.js"></script>
+<script src="bower/modernizr/modernizr.js"></script>
+<script src="bower/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 <script src="bower/wow/dist/wow.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
-<!-- build:js js/main.min.js -->
+<!-- build:js js/plugins.min.js -->
 <script src="js/wow.js"></script>
+<script src="js/placeholder.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/main.min.js -->
 <script src="js/main.js"></script>
 <!-- endbuild -->
 </body>

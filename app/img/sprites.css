@@ -1,5 +1,5 @@
 .footer-inner__social-link__fb, .footer-inner__social-link__git, .footer-inner__social-link__instag, .footer-inner__social-link__tw, .section-team__social-link-tw, .section-team__social-link-fb, .section-team__social-link-in, .section-team__social-link-mail, .footer-inner__social-link__ball{
-	background: url(sprites.png) no-repeat;
+	background: url("../img/sprites.png") no-repeat;
 }
 
 .footer-inner__social-link__fb{
