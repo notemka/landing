@@ -1,1 +1,3 @@
-$('.form-field').placeholder();
+$(function() {
+    $('.form-field').placeholder();
+});

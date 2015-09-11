@@ -7,20 +7,18 @@
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower/animate-css/animate.css" />
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower/font-awesome/css/font-awesome.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 
 	<!-- build:css css/main.min.css-->
 	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="stylesheet" href="fonts/fonts.css"/>
-	<link rel="stylesheet" href="img/sprites.css"/>
 	<!-- endbuild -->
 
 	<!-- build:js js/modernizr.min.js -->
 	<!-- bower:js -->
-	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/modernizr/modernizr.js"></script>
-	<script src="bower/wow/dist/wow.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 </head>
@@ -34,7 +32,7 @@
 <![endif]-->
 <body>
 <div class="container">
-	<section class="section section-welcome active" id="home">
+	<section class="section section-welcome" id="home">
 		<header class="header clearfix">
 			<nav class="navigation">
 				<a href="#home" class="navigation-link active">HOME</a>
@@ -85,7 +83,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="section-team clearfix">
+	<section class="section-team clearfix" id="team">
 		<h2 class="section__title section-team__title">MEET OUR TEAM</h2>
 		<p class="section__text section-team__text">We are a small team of designers and developers, who help brands with big ideas.</p>
 
@@ -99,10 +97,10 @@
 
 				<p class="section-team__item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
 				<div class="section-team__social">
-					<a href="" class="section-team__social-link section-team__social-link-fb"><span class="hidden">Facebook</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-tw"><span class="hidden">Twitter</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-in"><span class="hidden">InLinked</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-mail"><span class="hidden">Mail</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a>  <!-- section-team__social-link-fb" -->
+					<a href="" class="section-team__social-link"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>  <!-- section-team__social-link-tw" -->
+					<a href="" class="section-team__social-link"><i class="fa fa-linkedin"></i><span class="hidden">InLinked</span></a>  <!-- section-team__social-link-in" -->
+					<a href="" class="section-team__social-link"><i class="fa fa-envelope"></i><span class="hidden">Mail</span></a>  <!-- section-team__social-link-mail" -->
 				</div>
 			</li>
 			<li class="section-team__item">
@@ -113,10 +111,10 @@
 				<h4 class="section-team__item-title__inf">Creative Director</h4>
 
 				<p class="section-team__item-text">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
-				<div class="section-team__social">
-					<a href="" class="section-team__social-link section-team__social-link-tw"><span class="hidden">Twitter</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-in"><span class="hidden">InLinked</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-mail"><span class="hidden">Mail</span></a>
+				<div class="section-team__social section-team__social-three">
+					<a href="" class="section-team__social-link"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-linkedin"></i><span class="hidden">InLinked</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-envelope"></i><span class="hidden">Mail</span></a>
 				</div>
 			</li>
 			<li class="section-team__item">
@@ -128,10 +126,10 @@
 
 				<p class="section-team__item-text">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
 				<div class="section-team__social">
-					<a href="" class="section-team__social-link section-team__social-link-fb"><span class="hidden">Facebook</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-tw"><span class="hidden">Twitter</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-in"><span class="hidden">InLinked</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-mail"><span class="hidden">Mail</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-linkedin"></i><span class="hidden">InLinked</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-envelope"></i><span class="hidden">Mail</span></a>
 				</div>
 			</li>
 			<li class="section-team__item">
@@ -142,15 +140,15 @@
 				<h4 class="section-team__item-title__inf">SEO / Developer</h4>
 
 				<p class="section-team__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-				<div class="section-team__social">
-					<a href="" class="section-team__social-link section-team__social-link-fb"><span class="hidden">Facebook</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-tw"><span class="hidden">Twitter</span></a>
-					<a href="" class="section-team__social-link section-team__social-link-mail"><span class="hidden">Mail</span></a>
+				<div class="section-team__social section-team__social-three">
+					<a href="" class="section-team__social-link"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a>
+					<a href="" class="section-team__social-link"><i class="fa fa-envelope"></i><span class="hidden">Mail</span></a>
 				</div>
 			</li>
 		</ul>
 	</section>
-	<section class="section section-skills">
+	<section class="section section-skills" id="skills">
 		<h2 class="section__title section-skills__title">WE GOT SKILLS!</h2>
 		<p class="section__text section-skills__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -316,20 +314,21 @@
 	<div class="footer-inner">
 		<h2 class="footer-inner__title">FOLLOW US</h2>
 		<div class="footer-inner__social">
-			<a href="" class="footer-inner__social-link footer-inner__social-link__git"><span class="hidden">Git</span></a>
-			<a href="" class="footer-inner__social-link footer-inner__social-link__tw"><span class="hidden">Twitter</span></a>
-			<a href="" class="footer-inner__social-link footer-inner__social-link__ball"><span class="hidden">Ball</span></a>
-			<a href="" class="footer-inner__social-link footer-inner__social-link__fb"><span class="hidden">Facebook</span></a>
-			<a href="" class="footer-inner__social-link footer-inner__social-link__instag"><span class="hidden">Instagram</span></a>
+			<a href="" class="footer-inner__social-link"><i class="fa fa-github fa-social"></i><span class="hidden">Git</span></a>  <!-- footer-inner__social-link__git -->
+			<a href="" class="footer-inner__social-link"><i class="fa fa-twitter fa-social"></i><span class="hidden">Twitter</span></a>  <!-- footer-inner__social-link__tw -->
+			<a href="" class="footer-inner__social-link"><i class="fa fa-dribbble fa-social"></i><span class="hidden">Ball</span></a>  <!-- footer-inner__social-link__ball -->
+			<a href="" class="footer-inner__social-link"><i class="fa fa-facebook fa-social"></i><span class="hidden">Facebook</span></a>  <!-- footer-inner__social-link__fb -->
+			<a href="" class="footer-inner__social-link"><i class="fa fa-instagram fa-social"></i><span class="hidden">Instagram</span></a>  <!-- footer-inner__social-link__instag -->
 		</div>
 	</div>
 </footer>
 <!-- build:js js/vendor.min.js-->
 <!-- bower:js -->
 <script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="bower/jquery.scrollTo/jquery.scrollTo.js"></script>
 <script src="bower/modernizr/modernizr.js"></script>
-<script src="bower/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="bower/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="bower/wow/dist/wow.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
@@ -337,6 +336,7 @@
 <!-- build:js js/plugins.min.js -->
 <script src="js/wow.js"></script>
 <script src="js/placeholder.js"></script>
+<script src="js/waypointInit.js"></script>
 <!-- endbuild -->
 
 <!-- build:js js/main.min.js -->

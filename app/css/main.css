@@ -74,12 +74,6 @@ html, body {
   .navigation-link:hover {
     border: 1px solid #fff; }
 
-.active {
-  border: 1px solid #fff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 .scroll-menu {
   display: none;
   position: fixed;
@@ -230,6 +224,8 @@ html, body {
 .section-team__item {
   display: inline-block;
   max-width: 200px;
+  height: 515px;
+  position: relative;
   margin-left: 75px;
   vertical-align: top; }
   .section-team__item:first-child {
@@ -261,7 +257,12 @@ html, body {
 
 .section-team__social {
   list-style: none;
-  margin-bottom: 0; }
+  position: absolute;
+  bottom: 0;
+  left: 13%; }
+
+.section-team__social-three {
+  left: 23%; }
 
 .section-team__social-link {
   display: inline-block;
@@ -272,6 +273,12 @@ html, body {
   background: no-repeat center center; }
   .section-team__social-link:first-child {
     margin-left: 0; }
+
+.fa {
+  color: #b8c0c1;
+  font-size: 17px; }
+  .fa:hover {
+    color: #ed5276; }
 
 /******** FOUR SECTION ********/
 .section-skills, .section-skills__title {
@@ -319,10 +326,12 @@ html, body {
   max-width: 650px; }
 
 .section-portfolio__btn {
-  margin-bottom: 52px; }
+  margin: 0 0 52px;
+  padding: 0; }
 
 .section-portfolio__btn-link {
   display: inline-block;
+  border: 1px solid transparent;
   font-size: 1.125em;
   text-decoration: none;
   margin-left: 10px;
@@ -345,6 +354,13 @@ html, body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
+
+.section-portfolio__btn-link.active {
+  border: 1px solid #fff;
+  width: 90px; }
+
+.active {
+  border: 1px solid #fff; }
 
 .section-portfolio__list {
   list-style: none;
@@ -561,5 +577,8 @@ html, body {
   margin-left: 30px; }
   .footer-inner__social-link:first-child {
     margin-left: 0; }
+
+.fa-social {
+  font-size: 50px; }
 
 /*# sourceMappingURL=main.css.map */
