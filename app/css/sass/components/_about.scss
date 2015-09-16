@@ -1,0 +1,55 @@
+// *************************************
+//
+//  SECOND SECTION
+//  -> section "SERVICES WE PROVIDE"
+//
+// *************************************
+
+.section-services{
+  background-color: $twoSectionBg;
+  color: #fff;
+  text-align: center;
+}
+.section-services__title{
+  margin-bottom: 25px;
+}
+.section-services__text{
+  max-width: 655px;
+  margin-bottom: 70px;
+}
+.section-services__list{
+  list-style: none;
+  padding: 0 0 90px 0;
+  margin: 0;
+}
+.section-services__item{
+  display: inline-block;
+  max-width: 190px;
+  padding: 190px 0 0 0;
+  margin-left: 80px;
+  background: no-repeat center top;
+  vertical-align: top;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.section-services__item-branding{
+  background-image: url("../img/branding.png");
+}
+.section-services__item-design{
+  background-image: url("../img/design.png");
+}
+.section-services__item-develop{
+  background-image: url("../img/development.png");
+}
+.section-services__item-rocket{
+  background-image: url("../img/rocket-science.png");
+}
+.section-services__item-title{
+  font-size: 1.4em;
+  //  font-size: 22px;
+  margin: 0 0 20px 0;
+}
+.section-services__item-text{
+  line-height: 1.5em;
+}

@@ -1,0 +1,39 @@
+// *************************************
+//
+//  Базовые стили
+//  -> cтили, применяемые ко всей странице
+//
+// *************************************
+
+html,body{
+  font-family: 'ralewayRegular', sans-serif;
+  font-size: 1em;
+  //  font-size: 16px;
+}
+.container{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.section{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.section__text{
+  margin: 0;
+  display: inline-block;
+  font-size: 1.125em;
+  //  font-size: 18px;
+  line-height: 1.5em;
+}
+.section__title{
+  color: $titleColor;
+  font-family: 'ralewayLight',sans-serif;
+  font-size: 2.375em;
+  //  font-size: 38px;
+  margin: 0 0 50px 0;
+  padding: 100px 0 16px 0;
+  background: url("../img/title-line.png") no-repeat center bottom;
+}

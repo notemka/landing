@@ -1,4 +1,4 @@
 
-// http://html.adobe.com/webplatform/layout/shapes
+// http://html.adobe.com/webplatform/structure/shapes
 
 Modernizr.addTest('shapes', Modernizr.testAllProps('shapeOutside', 'content-box', true));

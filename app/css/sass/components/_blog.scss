@@ -1,0 +1,64 @@
+// *************************************
+//
+//  SIX SECTION
+//  -> section "WHAT POEPLE SAY ABOUT US"
+//
+// *************************************
+
+.section-testimonials{
+  color: #fff;
+  background-color: $sixSectionBg;
+  margin-top: -5px;
+}
+.section-testimonials__title{
+  margin-bottom: 25px;
+}
+.section-testimonials__text{
+  margin-bottom: 70px;
+}
+.section-testimonials__list{
+  list-style: none;
+  margin: 0 0 0 -90px;
+  padding: 0;
+  min-width: 960px;
+}
+.section-testimonials__item{
+  display: inline-block;
+  font-size: 1.125em;
+  //  font-size: 18px;
+  min-width: 350px;
+  text-align: left;
+  margin-bottom: 155px;
+  margin-left: 90px;
+  vertical-align: top;
+}
+.section-testimonials__item-img__wrap{
+  width: 95px;
+  height: 95px;
+  float: left;
+  margin-right: 45px;
+}
+.section-testimonials__item-img{
+  width: 100%;
+  height: 100%;
+}
+.section-testimonials__item-inf{
+  float: right;
+  max-width: 355px;
+}
+.section-testimonials__item-text{
+  margin: 0 0 20px;
+  line-height: 1.7em;
+}
+.section-testimonials__item-title{
+  font-size: 1.4em;
+  //  font-size: 22px;
+  font-family: 'oxygenregular', sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+.section-testimonials__item-inf > span{
+  font-size: 0.75em;
+  //  font-size: 12px;
+  text-transform: uppercase;
+}

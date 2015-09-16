@@ -1,0 +1,48 @@
+// *************************************
+//
+//  FIRST SECTION
+//  -> section "home"
+//
+// *************************************
+
+.section-welcome{
+  background-size: 100% 100%;
+  background-color: $sixSectionBg!important;
+  background: url("../img/first-bg.jpg") no-repeat 50% 50%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 600px;
+}
+.section__content{
+  max-width: 66.666%;
+  //  max-width: 960px;
+  margin: 10.5% auto 0;
+  text-align: center;
+}
+.section-welcome__title{
+  background-image: none;
+  padding: 0;
+}
+.section-welcome__text{
+  margin-bottom: 80px;
+}
+.section-welcome__link{
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'oxygenbold', sans-serif;
+  color: $sixSectionBg;
+  font-size: 1.55em;
+  //  font-size: 25px;
+  background-color: #fff;
+  width: 299px;
+  padding: 18px 0;
+  margin: 0;
+  border-radius: 4px;
+  transition: 0.2s linear;
+  &:hover{
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+}

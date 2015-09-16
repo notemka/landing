@@ -4,13 +4,14 @@
 
 var gulp = require('gulp'),
 	wiredep = require('wiredep').stream,
-	useref = require('gulp-useref'),		//склеивает и рассовывает все по папкам, в html надо поставить специальные комментарии для css и js
-	uglify = require('gulp-uglify'),
+	useref = require('gulp-useref'),		//склеивает css-, js-файлы и помещает всё в dist, в html надо поставить специальные комментарии для css и js
+	uglify = require('gulp-uglify'),		//минифицирует js
 	clean = require('gulp-clean'),          //для очистки папки dist перед пересборкой
-	gulpif = require('gulp-if'),
-	filter = require('gulp-filter'),
+	gulpif = require('gulp-if'),			//для установки условий
+	filter = require('gulp-filter'),		//для фильтрования шрифтов
 	size = require('gulp-size'),            //показывает размер сборки
 	imagemin = require('gulp-imagemin'),    //минификация изображений
+	autoprefixer = require('gulp-autoprefixer'),	//добавляет префиксы
 	minifyCss = require('gulp-minify-css'), //минификация файла css
 	jade = require('gulp-jade'),
 	prettify = require('gulp-prettify'),
@@ -30,10 +31,11 @@ gulp.task('clean', function () {
 //переносим html, css, js в папку dist
 gulp.task('useref', function () {
 	var assets = useref.assets();
-	return gulp.src('app/*.html')
+    return gulp.src('app/*.html')
 		.pipe(assets)
 		.pipe(gulpif('*.js', uglify()))
 		.pipe(gulpif('*.css', minifyCss({compability: 'ie8'})))
+		.pipe(gulpif('*.css', autoprefixer({browsers: ['last 15 versions'],cascade: false})))
 		.pipe(assets.restore())
 		.pipe(useref())
 		.pipe(gulp.dest('dist')); //прописываем новые пути

@@ -1,0 +1,66 @@
+// *************************************
+//
+//   FOUR SECTION
+//   -> section "WE GOT SKILLS!"
+//   -> טלוועסÿ svg הטאדנאללא
+//
+// *************************************
+
+.section-skills, .section-skills__title{
+  color: $textColor;
+}
+.section-skills__title{
+  padding-top: 87px;
+  margin-bottom: 30px;
+}
+.section-skills__text{
+  margin-bottom: 80px;
+  max-width: 665px;
+}
+.section-skills__list{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 186px;
+}
+.section-skills__item{
+  display: inline-block;
+  margin-left: 105px;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+.section-skills__item-title{
+  @extend .section-services__item-title;
+  font-family: 'oxygenlight', sans-serif;
+  text-transform: uppercase;
+}
+.section-skills__item-img__wrap{
+  width: 166px;
+  height: 166px;
+  margin-bottom: 20px;
+}
+.svg-block{
+  height: 166px;
+  width: 166px;
+}
+.svg-circle{
+  stroke: #3c989e;
+  stroke-width: 13;
+  fill: transparent;
+}
+.svg-text{
+  font-family: 'ralewayLight', sans-serif;
+}
+.svg-text__first{
+  font-size: 3.44em;
+  //font-size: 55px;
+}
+.svg-text__second{
+  font-size: 3.37em;
+  //font-size: 54px;
+}
+.svg-path{
+  stroke: #F7F7F7;
+  stroke-width: 13.7;
+  fill: transparent;
+}

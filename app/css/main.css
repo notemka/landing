@@ -1,33 +1,20 @@
 @charset "UTF-8";
-.clearfix:after, .clearfix:before {
-  content: ' ';
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-/* ╨┤╨╗╤П IE6-7 */
-.clearfix {
-  zoom: 1; }
-
-.hidden {
-  display: none; }
-
+@import url(../bower/normalize-css/normalize.css);
+@import url(../fonts/fonts.css);
+@import url(../bower/animate-css/animate.css);
 html, body {
-  font-family: 'ralewayRegular', sans-serif; }
+  font-family: 'ralewayRegular', sans-serif;
+  font-size: 1em; }
 
 .container {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
-  font-size: 1em; }
+  margin: 0 auto; }
 
 .section {
   margin: 0;
   padding: 0;
   text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .section__text {
@@ -44,7 +31,20 @@ html, body {
   padding: 100px 0 16px 0;
   background: url("../img/title-line.png") no-repeat center bottom; }
 
-/******** FIRST SECTION ********/
+.clearfix:after, .clearfix:before {
+  content: ' ';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/* clearfix ╨┤╨╗╤П IE6-7 */
+.clearfix {
+  zoom: 1; }
+
+.hidden {
+  display: none; }
+
 .header {
   width: 100%; }
 
@@ -62,14 +62,8 @@ html, body {
   margin-left: 20px;
   padding: 6px 15px;
   border: 1px solid transparent;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: 0.2s linear;
-  -moz-transition: 0.2s linear;
   transition: 0.2s linear; }
   .navigation-link:hover {
     border: 1px solid #fff; }
@@ -83,15 +77,13 @@ html, body {
   z-index: 10;
   height: 73px;
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 3px 0 10px #999;
-  -moz-box-shadow: 3px 0 10px #999;
   box-shadow: 3px 0 10px #999; }
 
 .scroll-menu__inner {
   height: 100%;
   float: right;
   margin: 0;
-  padding: 1.38% 7.6% 0 0; }
+  padding: 20px 110px 0 0; }
 
 .scroll-menu__link {
   text-decoration: none;
@@ -100,11 +92,7 @@ html, body {
   margin-left: 20px;
   padding: 6px 15px;
   border: 1px solid transparent;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: 0.2s linear;
-  -moz-transition: 0.2s linear;
   transition: 0.2s linear; }
   .scroll-menu__link:hover {
     border: 1px solid #d7d7d7; }
@@ -143,18 +131,13 @@ html, body {
   width: 299px;
   padding: 18px 0;
   margin: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: 0.2s linear;
-  -moz-transition: 0.2s linear;
   transition: 0.2s linear; }
   .section-welcome__link:hover {
     color: #fff;
     background-color: transparent;
     border: 1px solid #fff; }
 
-/******** SECOND SECTION ********/
 .section-services {
   background-color: #5db5a4;
   color: #fff;
@@ -201,7 +184,6 @@ html, body {
 .section-services__item-text {
   line-height: 1.5em; }
 
-/******** THIRD SECTION ********/
 .section-team {
   background-color: #eefafb;
   text-align: center; }
@@ -280,7 +262,6 @@ html, body {
   .fa:hover {
     color: #ed5276; }
 
-/******** FOUR SECTION ********/
 .section-skills, .section-skills__title {
   color: #5c5f5f; }
 
@@ -312,7 +293,29 @@ html, body {
   height: 166px;
   margin-bottom: 20px; }
 
-/******** FIFE SECTION ********/
+.svg-block {
+  height: 166px;
+  width: 166px; }
+
+.svg-circle {
+  stroke: #3c989e;
+  stroke-width: 13;
+  fill: transparent; }
+
+.svg-text {
+  font-family: 'ralewayLight', sans-serif; }
+
+.svg-text__first {
+  font-size: 3.44em; }
+
+.svg-text__second {
+  font-size: 3.37em; }
+
+.svg-path {
+  stroke: #F7F7F7;
+  stroke-width: 13.7;
+  fill: transparent; }
+
 .section-portfolio {
   background-color: #000;
   color: #fff; }
@@ -338,21 +341,13 @@ html, body {
   width: 90px;
   padding: 10px 0;
   color: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-transition: 0.2s linear;
-  -moz-transition: 0.2s linear;
-  transition: 0.2s linear;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: 0.2s linear; }
   .section-portfolio__btn-link:first-child {
     margin-left: 0; }
   .section-portfolio__btn-link:hover {
     background-color: rgba(255, 255, 255, 0.4);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
 .section-portfolio__btn-link.active {
@@ -400,9 +395,7 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  transition: 0.3s linear; }
+  transition: 0.2s linear; }
   .section__item-hover__wrap:hover {
     opacity: 1; }
 
@@ -416,7 +409,6 @@ html, body {
   text-decoration: none;
   color: #fff; }
 
-/******** SIX SECTION ********/
 .section-testimonials {
   color: #fff;
   background-color: #ed5276;
@@ -471,7 +463,6 @@ html, body {
   font-size: 0.75em;
   text-transform: uppercase; }
 
-/******** SEVEN SECTION ********/
 .section-get-in-touch__title {
   color: #000;
   margin-bottom: 30px; }
@@ -495,8 +486,6 @@ html, body {
   color: #9b9b9b;
   padding: 15px 18px;
   display: inline-block;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px; }
 
 .form-field__name, .form-field__email {
@@ -513,8 +502,6 @@ html, body {
   height: 200px;
   resize: none;
   margin-bottom: 25px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .form-send-btn {
@@ -525,21 +512,13 @@ html, body {
   border: 1px solid transparent;
   width: 295px;
   padding: 20px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-transition: 0.2s linear;
-  -moz-transition: 0.2s linear;
-  transition: 0.2s linear;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: 0.2s linear; }
   .form-send-btn:hover {
     color: #ed5276;
     border: 1px solid #ed5276;
     background-color: transparent;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
 .success-field, .form__success-message {
@@ -554,9 +533,9 @@ html, body {
   width: 130px;
   margin: 0 auto; }
 
-/******** FOOTER ********/
 .footer {
   max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
   background-color: #d7d7d7; }
 

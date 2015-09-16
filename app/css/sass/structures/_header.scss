@@ -1,0 +1,63 @@
+// -------------------------------------
+//   HEADER
+// -------------------------------------
+
+.header{
+  width: 100%;
+}
+.navigation{
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  margin: 4.16% 7.6% 0 0;
+  //  margin: 60px 110px 0 0;
+  padding: 0;
+}
+.navigation-link{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 6px 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  &:hover{
+    border: 1px solid #fff;
+  }
+}
+.scroll-menu{
+  display: none;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 10;
+  height:73px;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 3px 0 10px #999;
+}
+.scroll-menu__inner{
+  height: 100%;
+  float: right;
+  margin: 0;
+  //padding: 1.38% 7.6% 0 0;
+    padding: 20px 110px 0 0;
+}
+.scroll-menu__link{
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 6px 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: 0.2s linear;
+  &:hover{
+    border: 1px solid $navBorder;
+  }
+}
+.scroll-active{
+  border: 1px solid $navBorder;
+}

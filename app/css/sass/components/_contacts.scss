@@ -1,0 +1,80 @@
+// *************************************
+//
+//  SEVEN SECTION
+//  -> section "get in touch"
+//
+// *************************************
+
+.section-get-in-touch__title{
+  color: #000;
+  margin-bottom: 30px;
+}
+.section-get-in-touch__text{
+  margin-bottom: 75px;
+  max-width: 805px;
+}
+.form{
+  margin: 0 auto 120px;
+  max-width: 860px;
+  position: relative;
+}
+.form-item{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.form-field{
+  border: 1px solid $navBorder;
+  font-size: 1.125em;
+  //  font-size: 18px;
+  color: $inputText;
+  padding: 15px 18px;
+  display: inline-block;
+  border-radius: 4px;
+}
+.form-field__name, .form-field__email{
+  width: 43%;
+}
+.form-field__name{
+  float: left;
+}.form-field__email{
+   float: right;
+ }
+.form-field__msg{
+  width: 100%;
+  height: 200px;
+  resize: none;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+.form-send-btn{
+  font-family: 'oxygenbold', sans-serif;
+  color: #fff;
+  font-size: 1.55em;
+  //  font-size: 25px;
+  background-color: $sixSectionBg;
+  border: 1px solid transparent;
+  width: 295px;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  &:hover{
+    color: $sixSectionBg;
+    border: 1px solid $sixSectionBg;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+}
+.success-field {
+  border: 1px solid lighten(green, 10%);
+  background-color: lighten(green, 65%);
+}
+.form__success-message{
+  @extend .success-field;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  padding: 10px;
+  width: 130px;
+  margin: 0 auto;
+}
